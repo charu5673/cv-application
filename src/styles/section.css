@@ -1,0 +1,67 @@
+
+.section
+{
+    box-shadow: 0 0 8px 0 rgb(39, 39, 39);
+    border-radius: 30px;
+    padding: 3vh;
+    margin-bottom: 5vh;
+    background-color: rgb(192, 205, 215);
+}
+
+h1
+{
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 3vh;
+    font-size: 2em;
+}
+
+.answers
+{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-bottom: 30px;
+}
+
+label
+{
+    font-size: 1.5em;
+}
+
+input
+{
+    width: 25%;
+    height: 20px;
+}
+
+.buttons
+{
+    display: flex;
+    gap:10px;
+}
+
+button
+{
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 30px;
+    width: 60px;
+}
+
+button:disabled
+{
+    border: 1px solid gray;
+    color:rgb(52, 52, 52);
+}
+
+.school:nth-child(3n+1):not(:first-child)
+{
+    border-top: 2px solid black;
+    padding-top: 30px;
+}
+
+.company:nth-child(5n+1):not(:first-child)
+{
+    border-top: 2px solid black;
+    padding-top: 30px;
+}
