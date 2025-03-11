@@ -13,6 +13,21 @@ function School()
         }
         setInputsS(arr);
     };
+
+    const values = ()=>{
+        for(let i=0;i<currentInput.length;i++)
+        {
+            for(let j=0;j<currentInput[i].length;j++)
+            {
+                if(currentInput[i][j]!=null&&currentInput[i][j]!=undefined&&currentInput[i][j]!="")
+                    return true;
+            }
+        }
+        return false;
+    };
+
+    if(!values())
+        return null;
     return (
         <>
         <h2 className="education">Education</h2>

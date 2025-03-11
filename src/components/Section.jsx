@@ -2,6 +2,7 @@ import { useState } from 'react'
 import '../styles/section.css'
 import { connectSchool } from './School';
 import { connectHeader } from './Header';
+import { connectCompany } from './Company';
 
 function Section(props)
 {
@@ -35,6 +36,8 @@ function Section(props)
             connectHeader(inputs);
         else if(props.title.charAt(0)=="E")
             connectSchool(inputs);
+        else
+        connectCompany(inputs);
     };
 
     const updateValues=(e)=>{

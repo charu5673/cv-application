@@ -11,12 +11,24 @@ function Header()
         updateInfo([e[0][2],e[1][2],e[2][2]]);
     }
 
+    const values = ()=>{
+            for(let j=0;j<info.length;j++)
+            {
+                if(info[j]!=null&&info[j]!=undefined&&info[j]!="")
+                    return true;
+            }
+        return false;
+    };
+
+    if(!values())
+        return null;
+
     return (
         <>
         <h2 className="name">{info[0]}</h2>
         <div className="subInfo">
-            <h3 className="email">{info[1]}</h3>
-            <h3 className="phone">{info[2]}</h3>
+            <span className="email">{info[1]}</span>
+            <span className="phone">{info[2]}</span>
         </div>
         </>
     );

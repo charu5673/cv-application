@@ -3,6 +3,7 @@ import './App.css'
 import Section from './components/Section'
 
 function Input() {
+  
   return (
     <>
       <div id="input">
